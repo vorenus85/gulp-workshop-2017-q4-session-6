@@ -1,1 +1,41 @@
-"# gulp-workshop-2017-q4-session-6" 
+# We work to the start folder, the solutions are in the end folder
+
+## 1. Declare 4 npm package in gulpfile.js
+```
+var gulp = require('gulp');
+var handlebars = require('gulp-compile-handlebars');
+var rename = require('gulp-rename');
+var fs = require('fs');
+```
+
+## 2. Install 4 npm package
+
+```
+npm install gulp --save-dev
+npm install gulp-compile-handlebars --save-dev
+npm install gulp-rename --save-dev
+npm install fs --save-dev
+```
+
+## 3. Write task
+
+```
+gulp.task('default', function () {
+   var content = fs.readFileSync('src/templateData/product/templateData.json');
+   var templateData = JSON.parse(content);
+
+   var options = {
+           batch : ['./src/templates/product/partials'],
+           helpers : {
+               capitals : function(str){
+                   return str.toUpperCase();
+               }
+           }
+       };
+  
+   return gulp.src('src/templates/product/product.hbs')
+   .pipe(handlebars(templateData, options))
+   .pipe(rename('product.html'))
+   .pipe(gulp.dest('dist'));
+});
+```
