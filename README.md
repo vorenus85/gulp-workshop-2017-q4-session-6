@@ -8,7 +8,7 @@ type to terminal
 npm init
 ```
 
-## 1. Declare packages
+## 2. Declare packages
 Declare 4 npm package in gulpfile.js
 ```
 var gulp = require('gulp');
@@ -17,7 +17,7 @@ var rename = require('gulp-rename');
 var fs = require('fs');
 ```
 
-## 2. Install packages
+## 3. Install packages
 Install 4 npm package
 
 ```
@@ -27,7 +27,7 @@ npm install gulp-rename --save-dev
 npm install fs --save-dev
 ```
 
-## 3. Write task
+## 4. Write task
 
 ```
 gulp.task('default', function () {
