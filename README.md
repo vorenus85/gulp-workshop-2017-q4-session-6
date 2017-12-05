@@ -1,4 +1,4 @@
-# Handlebar task with gulp
+# Handlebars task with gulp
 Work to the <b>start</b> folder, the solutions are in the <b>end</b> folder
 
 ## 1. Declare packages
