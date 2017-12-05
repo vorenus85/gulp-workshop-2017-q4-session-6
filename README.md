@@ -1,6 +1,13 @@
 # Handlebars task with gulp
 Work to the <b>start</b> folder, the solutions are in the <b>end</b> folder
 
+## 1. Npm init
+
+type to terminal 
+```$xslt
+npm init
+```
+
 ## 1. Declare packages
 Declare 4 npm package in gulpfile.js
 ```
