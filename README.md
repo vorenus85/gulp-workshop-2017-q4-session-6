@@ -1,6 +1,8 @@
-# We work to the start folder, the solutions are in the end folder
+# Handlebar task with gulp
+Work to the <b>start</b> folder, the solutions are in the <b>end</b> folder
 
-## 1. Declare 4 npm package in gulpfile.js
+## 1. Declare packages
+Declare 4 npm package in gulpfile.js
 ```
 var gulp = require('gulp');
 var handlebars = require('gulp-compile-handlebars');
@@ -8,7 +10,8 @@ var rename = require('gulp-rename');
 var fs = require('fs');
 ```
 
-## 2. Install 4 npm package
+## 2. Install packages
+Install 4 npm package
 
 ```
 npm install gulp --save-dev
